@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript'e Giriş</title>
+</head>
+<body>
+  <h1>JavaScript Denemesi</h1>
+  <button onclick="alert('Merhaba, Dünya!');">Bana Tıkla</button>
+
+  <script>
+    let var1 = 5;
+    let var2 = 10;
+    let isim = `emre`;
+    console.log(`isim:${isim}, var1:${var1}  aaa`);
+    var1 += 5;
+    console.log(var1 + var2);
+    
+    // comperasion operators
+    fiveasint = 5;
+    fiveasstring = '5';
+
+    console.log(fiveasint == fiveasstring); // true, because they are the same value(types are not important)
+    console.log(fiveasint === fiveasstring); // false, because they are different types
+
+    console.log(true && true); // and
+    console.log(true || false); // or
+    console.log(!(fiveasint == fiveasstring)); // false
+
+    // if else
+    total = 3 + 10;
+
+    if (total > 10){
+        console.log(`bigger than 10`);
+    }
+    else{
+        console.log(`smaller than 10`);
+    }
+
+    // for loop
+    for (let i = 0; i<10; i++){
+        console.log(`${i}`);
+    }
+
+    // while loop
+    let condition = 0; 
+    while(condition<10){
+        condition++;
+        console.log(condition);
+    }
+
+    // do while
+    do{
+        console.log(` some code which will run at least once`);
+    }while(false)
+
+    // for of loop
+    let liste = [1,2,3,4,5];
+    for(let each of liste){
+        console.log(each);
+    }
+
+    //for in loop
+    let obje = {isim:'emre',yas:23};
+    for(ozellik in obje){
+        console.log(`ozellik:${ozellik}, bilgi:${obje[ozellik]}`);
+    }
+  </script>
+</body>
+</html>
